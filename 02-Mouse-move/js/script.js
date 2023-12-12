@@ -36,7 +36,7 @@ $(function () {
 
     // 마우스에 좌표값 적용
     $cursor.css({
-      transform: `translate(${mx}, ${my})`,
+      transform: `translate(${mx}px, ${my}px)`,
     });
 
     requestAnimationFrame(moving);
