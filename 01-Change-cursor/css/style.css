@@ -1,0 +1,45 @@
+@charset 'utf-8';
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ol,
+ul,
+li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+
+.wrap {
+  width: 70%;
+  margin: 0 auto;
+  background: #ff5;
+  padding: 50px;
+  line-height: 1.5;
+}
+.cursor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 32px;
+  height: 33px;
+  background: url(../images/hover-2.png) no-repeat 0 0;
+
+  /* 마우스 커서와 관련없게 */
+  pointer-events: none;
+
+  /* 사용자가 선택할 수 없게 */
+  user-select: none;
+}
+.cursor.click {
+  background-position: -32px 0;
+}
+
+body,
+a,
+a:hover {
+  cursor: none;
+}
