@@ -14,7 +14,6 @@ img {
 }
 body {
   overflow-x: hidden;
-  overflow-y: hidden;
 }
 .obj-wrap {
   height: 100vh;
@@ -52,4 +51,8 @@ body {
   width: 450px;
   height: 150px;
   background: grey;
+}
+.scroll-area {
+  padding: 10%;
+  line-height: 2;
 }
