@@ -43,3 +43,29 @@ a,
 a:hover {
   cursor: none;
 }
+
+/* spark 디자인 */
+.spark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #000;
+  pointer-events: none;
+  user-select: none;
+  transition: 0.2s;
+}
+
+.spark.click {
+  animation: sparkAni 0.4s;
+}
+
+@keyframes sparkAni {
+  100% {
+    width: 70px;
+    height: 70px;
+    opacity: 0;
+  }
+}
